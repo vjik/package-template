@@ -11,8 +11,8 @@ The package ...
 
 The package could be installed with [composer](https://getcomposer.org/download/):
 
-```
-composer install vjik/_____
+```shell
+composer require vjik/_____ --prefer-dist
 ```
 
 ## General usage
@@ -42,3 +42,8 @@ The code is statically analyzed with [Psalm](https://psalm.dev/). To run static 
 ```shell
 ./vendor/bin/psalm
 ```
+
+## License
+
+The _____ is free software. It is released under the terms of the BSD License.
+Please see [`LICENSE`](./LICENSE.md) for more information.
