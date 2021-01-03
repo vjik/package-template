@@ -1,11 +1,12 @@
 # _____
 
-The package ...
-
-
 [![Latest Stable Version](https://poser.pugx.org/vjik/_____/v/stable.png)](https://packagist.org/packages/vjik/_____)
 [![Total Downloads](https://poser.pugx.org/vjik/_____/downloads.png)](https://packagist.org/packages/vjik/_____)
+[![Build status](https://github.com/vjik/_____/workflows/build/badge.svg)](https://github.com/vjik/_____/actions?query=workflow%3Abuild)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fvjik%2F_____%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/vjik/_____/master)
+[![static analysis](https://github.com/vjik/_____/workflows/static%20analysis/badge.svg)](https://github.com/vjik/_____/actions?query=workflow%3A%22static+analysis%22)
 
+The package ...
 
 ## Installation
 
