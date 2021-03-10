@@ -8,6 +8,10 @@
 
 The package ...
 
+## Requirements
+
+- PHP 7.4 or higher.
+
 ## Installation
 
 The package could be installed with [composer](https://getcomposer.org/download/):
