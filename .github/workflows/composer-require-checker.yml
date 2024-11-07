@@ -1,4 +1,4 @@
-name: build
+name: Composer require checker
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  tests:
+  composer-require-checker:
     name: PHP ${{ matrix.php }}-${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}
@@ -16,34 +16,23 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - windows-latest
-
         php:
           - 8.2
           - 8.3
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install PHP with extensions
         uses: shivammathur/setup-php@v2
-        env:
-          update: true
         with:
           php-version: ${{ matrix.php }}
-          ini-values: date.timezone='UTC'
-          coverage: xdebug
           tools: composer:v2
+          coverage: none
 
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v3
 
-      - name: Run tests with PHPUnit
-        run: vendor/bin/phpunit --colors=always --coverage-clover=coverage.xml
-
-      - name: Upload coverage to Coveralls
-        if: matrix.os == 'ubuntu-latest'
-        uses: coverallsapp/github-action@v2
-        with:
-          file: ./coverage.xml
+      - name: Check dependencies
+        run: vendor/bin/composer-require-checker
