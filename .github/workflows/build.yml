@@ -34,7 +34,6 @@ jobs:
           php-version: ${{ matrix.php }}
           ini-values: date.timezone='UTC'
           coverage: xdebug
-          tools: composer:v2
 
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v3
