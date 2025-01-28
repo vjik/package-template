@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/vjik/_____/badge.svg)](https://coveralls.io/github/vjik/_____)
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fvjik%2F_____%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/vjik/_____/master)
 [![type-coverage](https://shepherd.dev/github/vjik/_____/coverage.svg)](https://shepherd.dev/github/vjik/_____)
-[![static analysis](https://github.com/vjik/_____/workflows/static%20analysis/badge.svg)](https://github.com/vjik/_____/actions?query=workflow%3A%22static+analysis%22)
+[![Static analysis](https://github.com/vjik/_____/actions/workflows/static.yml/badge.svg?branch=master)](https://github.com/vjik/_____/actions/workflows/static.yml?query=branch%3Amaster)
 [![psalm-level](https://shepherd.dev/github/vjik/_____/level.svg)](https://shepherd.dev/github/vjik/_____)
 
 The package ...
